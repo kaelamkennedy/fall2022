@@ -1,0 +1,8 @@
+.test-class1{
+    color:rgba(255, 85, 150, 50);
+    font-size:20px;
+    word-spacing: 10px;
+    font-weight: 800;
+    text-shadow: 10px 10px 15px red;
+    text-align: center;
+}

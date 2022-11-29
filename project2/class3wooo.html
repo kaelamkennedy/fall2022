@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+
+    <style> 
+    body {
+        margin: 0;
+    }
+        ul {
+            padding: 20px;
+            list-style: none;
+            display: flex;
+            width: 100vw;
+            justify-content: space-between;
+        }
+
+        .menu-button {
+            background: blue;
+            color: white;
+        }
+
+        .menu-hide {
+            display:none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div onclick="toggleMenu()" class="menu-button">
+        <p>MENU</p>
+
+    </div>
+    
+    <ul id="menu-items">
+        <li> Menu Page 1</li>
+        <li> Menu Page 2</li>
+        <li> Menu Page 3</li>
+        <li> Menu Page 4</li>
+        <li> Menu Page 5</li>
+    </ul>
+
+    <script>
+        let menuItems = document.querySelector 
+        ("#menu-items");
+
+        function toggleMenu() {
+            menuItems.classList.toggle("menu-hide");
+        }
+    </script>
+</body>
+</html>

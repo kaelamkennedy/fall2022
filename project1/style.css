@@ -31,6 +31,13 @@ body {
 audio {
     opacity: 1;
 }
+
+.test {
+    background: blue;
+    height:100px;
+    width: 40%;
+
+}
 .text {
 
     font-family: "BradfordLL", Georgia, 'Times New Roman', Times, serif;

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    body{ 
+        margin: 0;
+
+    }
+    .container {
+        width:100vw;
+        height: 100vh;
+        background: orange;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .link-flamingo{ 
+        border: 2px solid burlywood;
+        margin 20px;
+        text-decoration: none;
+        color: bisque;
+        font-family: sans-serif;
+        padding 10px 20px
+        border: radius 50%;
+        display: inline-block;
+        min-height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max: width 200px;
+        transition: .5;
+    }
+
+    .grid-flamingo {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        border: 1px solid black;
+
+    }
+
+    .grid-flamingo div {
+        border: 1px solid black;
+        align-items: center;
+    }
+    .content {
+        max: width 600px;
+        width:100%;
+        padding: 100px;
+    }
+
+</style>
+
+<body>
+   <a href="https://google.com/"
+   class="link-flamingo">This is a link</a>
+   
+   <div class="grid-flamingo">
+        <div><p> something goes here</p></div>
+        <div><p> something goes here</p></div>
+        <div><p> something goes here</p></div>
+   </div>
+
+    <div class="container">
+            <div class="content">
+                <p> One of the first to observe that Homer's description of colors were, by modern standards, far from accurate, was British statesman William Gladstone.[2] In his 1858 book Studies on Homer and the Homeric Age, Gladstone analysed all aspects of Homer's mythical world, to discover a total absence of blue from the poet's descriptions of the Greek natural scenery. The word kyanós (κυανός), which in later stages of Greek meant blue, does make a limited appearance, but for Homer it almost certainly meant "dark"</p>
+            </div>
+    </div>
+
+
+
+    
+</body>
+</html>

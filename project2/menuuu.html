@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+
+        .container p {
+            background-color: greenyellow;
+            border-radius: 100%;
+            text-align: center;
+            color: white;
+            animation-name: fish;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes fish {
+            from {
+                transform: rotate(-180deg) scale(1, 0.5);
+            }
+            to {
+                transform: rotate(180deg) scale(0.5,1);
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+    <button onclick="clearInterval(loop)">STOP</button>
+    <button onclick="restartInterval()">GO</button>
+    <div class="container"></div>
+
+    <script>
+        let container = document.querySelector(".container");
+
+        let loop = setInterval(function() {
+            let red = Math.random()*255;
+            let blue = Math.random()*255;
+            let green = Math.random()*255;
+
+            let fontSize = Math.random()*100 + "px";
+            let animationDuration = Math.random()*5 + "s";
+
+            container.innerHTML += 
+                "<p style='color:rgb("+red+","+green+","+blue+"); animation-duration:"+animationDuration+" '>hi! </p>";
+        }, 100)
+
+        function restartInterval() {
+            loop = setInterval(function() {
+                container.innerHTML += "<p>hi!</p>";
+            }, 500)
+        }
+        
+    </script>
+
+
+</body>
+</html>
